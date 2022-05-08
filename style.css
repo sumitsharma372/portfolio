@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@400;500&family=Poppins:wght@400;500;700&family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+*{
+    margin: 0 ;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    --color-primary: #030529;
+    --color-secondary: #7a12c4;
+    --color-bg: #181e59;
+    --color-bg1: #1d2570;
+}
+body {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    width: 100%;
+    padding: 10px;
+    background-color: #537895;
+        background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+    padding-bottom: 1rem;
+}
+
+.container nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    gap: 5px;
+
+}
+ul li a {
+    color: white;
+}
+
+nav ul li {
+    white-space: nowrap;
+    background: linear-gradient(100deg, #2d455e, #1c528c 32%);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    border: 1px solid white;
+    transition: all 300ms ease;
+}
+
+
+nav ul li:hover {
+    opacity: 0.8;
+    transform: translateY(3px);
+}
+.container nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2rem;
+    padding-left: 0.8rem;
+    width: 100%;
+
+}
+nav .menu {
+    display: none;
+}
+
+.profile-logo .profile-photo {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+}
+.profile-photo img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+
+}
+
+.profile-logo:hover{
+    animation: rotate 2s ease;
+    transition: ease;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(30deg);
+    }
+    75% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(0deg)
+    }
+    
+}
+
+
+.about {
+    padding: 2rem 1rem;
+    background: url(./background.jpg);
+    background-size: cover;
+    background-position:center ;
+    background-repeat: no-repeat;
+}
+.about .content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    width: 30rem;
+}
+
+.about-photo {
+    width: 20rem;
+    height: fit-content;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px auto;
+    box-shadow: 0 0 2rem 2rem rgba(0, 0, 0, 0.3);
+
+}
+.photo {
+    width: 100%;
+    height: 25rem;
+   
+}
+.photo img {
+    object-fit: cover;
+    /* object-position: center; */
+    width: 100%;
+    height: 100%;
+    filter: saturate(0.6);
+    transition: all 400ms ease;
+}
+.about-photo:hover .photo img {
+    filter: saturate(1);
+}
+
+.about h2 {
+    font-size: 2.3rem;
+}
+
+.about p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    
+}
+.myinfo {
+    padding: 1rem;
+    box-shadow: inset 0 0 15rem 1rem #d7d9db;
+    border-radius: 1rem;
+    color:#3f403f;
+}
+
+section {
+    width: 100%;
+    padding: 1rem;
+    background-color: #f9ea8f;
+        background-image: linear-gradient(315deg, #f9ea8f 0%, #aff1da 74%);
+        position: relative;
+    padding-bottom: 2rem;
+}
+section h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 13px ;
+    font-size: 2rem;
+    /* letter-spacing: 1px; */
+    color: #005eb0;
+}
+.certificates h3 {
+    font-family: 'Poppins', sans-serif;
+}
+ .cer-content{
+     position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+}
+
+.certificate .certificate-photo {
+    height: 20rem;
+    /* width: 30rem; */
+    overflow: hidden;
+}
+.certificate-photo img {
+    height: 100%;
+    width: 100%;
+}
+
+.projects {
+    padding: 0 1.2rem;
+    padding-top: 1.5rem;
+    background-color: #b1ade2;
+        background-image: linear-gradient(315deg, #b1ade2 0%, #7ddff8 74%);
+        padding-bottom: 2rem;
+
+}
+.projects h3 {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.projects .projects-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+    background-color: #b8c6db;
+        background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+    transition: all 300ms ease;
+    border-radius: 5px;
+    
+}
+.project:hover {
+    transform: scale(1.015);
+    box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.3);
+}
+.project h5 {
+    margin: 5px 0;
+    font-size: 1.01rem;
+
+    
+    
+}
+.project-photo {
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 20rem;
+}
+
+.project-photo img {
+    width: 100%;
+    height: 100%;
+
+}
+
+nav ul.show-menu {
+    display: flex;
+}
+
+footer {
+    color: #d9d9d9;
+    padding: 1rem;
+}
+footer h5 {
+    font-size: 1.1rem;
+    padding: 0 0 10px 0;
+}
+.links ul {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+.links ul li a {
+    font-size: 1.4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+    .about .content {
+        background-color: transparent;
+        margin-left: 15rem;
+    }
+    .certificates {
+        background: url(./champion-golden-trophy-winner-background-success-achievement-concept_488220-480.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: max-content;
+    }
+    .projects-content .project small {
+        display: none;
+    }
+        .project-photo {
+            height: 25rem;
+        }
+        .projects-content{
+            gap: 1.5rem;
+        }
+
+        .certificates h3 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            
+        }
+        .projects h3 {
+            transform: scale(1.5);
+            padding-bottom: 1.1rem;
+        }
+        .about {
+            padding-top: 3rem;
+        }
+        
+}
+
+@media screen and (max-width: 1024px) {
+    .cer-content {
+        grid-template-columns: 1fr 1fr;
+    
+    }
+    .projects .projects-content {
+        grid-template-columns: 1fr 1fr;
+    }
+        .projects-content .project small {
+            display: none;
+        }
+        
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    .cer-content {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+    .projects .projects-content {
+        grid-template-columns: 1fr;
+    }
+    .container nav {
+        position: relative;
+    }
+    .container nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 3rem;
+        right: 0;
+        z-index: 2;
+        gap: 1px;
+        
+    }
+    .container nav ul {
+        transition: all 300ms all;
+        display: none;
+
+    }
+
+    
+    .container nav ul li {
+        animation: show 1s ease forwards;
+    }
+    @keyframes show {
+        0% {
+            transform: translateX(150%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    /* .container nav ul {
+        display: none;
+    } */
+    .about-photo {
+        width: 14rem;
+        border:  3px solid white;
+
+    }
+    .photo {
+        height: 18rem;
+    }
+    .about .content {
+        width: 95%;
+        gap: 0;
+        margin: 0 auto;
+    }
+    .myinfo {
+        margin-top: -5.8rem;
+        padding-top: 5rem;
+    }
+    .about{
+        background: url(./images.jfif);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .certificates h3{
+        font-size: 1.4rem;
+    }
+    .certificate .certificate-photo {
+        height: 17rem;
+    }
+        .container nav {
+            padding: 0;
+        }
+        .projects-content .project small {
+            display: block;
+        }
+    nav .menu {
+        display: block;
+        color:rgba(255, 255, 255, 0.7);
+        font-size: 1.3rem;
+    }
+    .container nav .show-menu {
+        display: flex;
+    }
+
+}
