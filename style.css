@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Khand:wght@400;500&family=Poppins:wght@400;500;700&family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap');
 
 *{
     margin: 0 ;
@@ -182,6 +183,75 @@ section h3 {
     /* letter-spacing: 1px; */
     color: #005eb0;
 }
+
+.work-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.work-img img{
+    height: 100px;
+    width: 100px;
+}
+
+.img-title {
+    display: flex;
+}
+
+.work-title {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    font-size: 2rem;
+    font-family: 'Chivo Mono', monospace;
+}
+
+.others {
+    margin-left: 7rem;
+    margin-top: -0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.work-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.location, .position {
+    font-size: 1.2rem;
+}
+
+
+/* skills section */
+.skills-content ul {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+.skills-content ul li {
+    padding: 5px;
+    border-radius: 3px;
+    width: 130px;
+    background-color: #bfbebb;
+    margin-bottom: 3px;
+}
+.skills-content ul li:hover {
+    background-color: #dbdad7;
+}
+
+section {
+    border-bottom: solid 1px black;
+}
+
+
 .certificates h3 {
     font-family: 'Poppins', sans-serif;
 }
@@ -326,6 +396,9 @@ footer h5 {
         .about {
             padding-top: 3rem;
         }
+        .skills-content {
+            margin-left: 4rem;
+        }
         
 }
 
@@ -372,7 +445,10 @@ footer h5 {
         display: none;
 
     }
-
+    .work-title {
+        font-size: 1.8rem;
+        
+    }
     
     .container nav ul li {
         animation: show 1s ease forwards;
